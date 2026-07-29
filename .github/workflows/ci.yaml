@@ -14,6 +14,7 @@ on:
 
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
   AWS_REGION: us-east-1 # Replace with your AWS region
   ECR_REPOSITORY: mypy # Replace with your ECR repository name
   IMAGE_TAG: ${{ github.sha }}
