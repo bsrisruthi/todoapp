@@ -17,7 +17,7 @@ env:
   AWS_REGION: us-east-1 # Replace with your AWS region
   ECR_REPOSITORY: mypy # Replace with your ECR repository name
   IMAGE_TAG: ${{ github.sha }}
-  ECR_REGISTRY: public.ecr.aws/${{ secrets.YOUR_ACCOUNT_ID }} # Replace with your public registry URL
+  ECR_REGISTRY: ${{ secrets.YOUR_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/my-py # Replace with your public registry URL
 
 jobs:
   build-and-push:
